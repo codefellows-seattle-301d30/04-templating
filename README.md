@@ -5,7 +5,7 @@
 
 ## Overview
 
-
+This product is designed to give users a consistent reading and navigation experience across mobile and desktop devices, with content ordered by most recent first and sortable by both author or category. 
 
 ## Getting Started
 
