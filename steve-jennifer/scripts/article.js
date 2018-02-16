@@ -16,8 +16,6 @@ Article.prototype.toHtml = function() {
   let $template = $('#article-template').html();
 
   let templateRender = Handlebars.compile($template);
-  
-  return templateRender(this);
 
   // REVIEW: If your template will use properties that aren't on the object yet, add them.
   // Since your template can't hold any JS logic, we need to execute the logic here.
@@ -27,7 +25,7 @@ Article.prototype.toHtml = function() {
 
 
   this.publishStatus = this.publishedOn ? `published ${this.daysAgo} days ago` : '(draft)';
-
+  
   // REVIEW: The ternary operator above accomplishes this same logic.
   // if(this.publishedOn) {
   //   this.publishStatus = `published ${this.daysAgo} days ago`;
@@ -35,12 +33,12 @@ Article.prototype.toHtml = function() {
   //   this.publishStatus = '(draft)';
   // }
 
-  // TODO: Use the method that Handlebars provides to return your filled-in html template for THIS article.
-
+  // DONE: Use the method that Handlebars provides to return your filled-in html template for THIS article.
+  return templateRender(this);
 };
 
 // COMMENT: Why are there parentheses around "(a,b)" in the .sort() method, but not around the "articleObject" or "article" arguments in the .forEach() methods?
-// PUT YOUR RESPONSE HERE
+// For an => function notation you need () only for 2 or more parameters.
 rawData.sort((a,b) => {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
