@@ -1,7 +1,7 @@
 # Kilovolt Blog - Lab 04
 
 **Author**: Haron and Suzanne Richman
-**Version**: 1.0.1 (increment the patch/fix version number up if you make more commits past your first submission)
+**Version**: 1.0.2 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
 
@@ -23,15 +23,18 @@ The user would need to
 * Create forEach loops to generate new object instances and then append them to the DOM
 * Create an array of objects to hold the content generation for the DOM for each object.
 * Create a JS file to generate a more interactive view of the DOM (selecting authors, catagories and hiding/showing full articles as well as navigating the long page as if it was a multipage website).
+* Add Handlebars library and use it to create a tempalte for the HTML articles. 
 
 
 ## Architecture
 
-We used IcoMoon icon font for navigation icons. We included the jQuery library. We used Chrome to analyze and inspect. Project is built on HTML, CSS, and JavaScript.
+We used IcoMoon icon font for navigation icons. We included the jQuery and Handlebars libraies We used Chrome to analyze and inspect. Project is built on HTML, CSS and JavaScript.
 
 ## Change Log
 
-02-15-2018 9:50 am - Commit to add and move readme, add normalize css, and update index.html. also updated css for improved styling.
+02-16-2018 9:45 am - Commit README and added Handlebars library CDN.
+02-16-2018 10:19 am - Added Handlebars library and created handlebars template for HTML. 
+
 
 
 
