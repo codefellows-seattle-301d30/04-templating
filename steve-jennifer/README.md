@@ -14,9 +14,10 @@
 
 ## Change Log
 0924 Setup the tree
-0947 first swing at the article tmeplate complete
-1006 compiled with handclebars and it works
-1030 finished the handlebars compiling and added the days agom script to the HTML.
+0947 first swing at the article template complete
+1006 compiled with handlebars and it works
+1030 finished the handlebars compiling and added the days ago script to the HTML.
+1116 added data-author attribute to article template so author filter works. Answered question about 'this' scope in arrow functions
 
 
 ## Credits and Collaborations
