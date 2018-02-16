@@ -19,7 +19,7 @@
         - If your object doesn't have values you need yet, you can add those properties in the model.
     -->
     <script id="article-template" type="text/x-handlebars-template">
-      <div class="article">
+      <article class="article" data-category="{{category}}" data-author="{{author}}">
         <header>
           <h1>{{title}}</h1>
           <div class="byline">
@@ -29,7 +29,7 @@
         </header>
         <section class="article-body">{{{body}}}</section>
         <a href="#" class="read-on">Read on &rarr;</a>
-        </div>
+      </article>
     </script>  
   </head>
   <body>
