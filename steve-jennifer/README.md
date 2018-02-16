@@ -14,6 +14,7 @@
 
 ## Change Log
 0924 Setup the tree
+0947 first swing at the article tmeplate complete
 
 
 ## Credits and Collaborations
