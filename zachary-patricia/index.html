@@ -21,8 +21,7 @@
     <script id="bloggerArticles-template" type="text/x-handlebars-template">
       <div>
         <h1>{{{title}}}</h1>
-        <!-- <p>AuthorURL: {{authorUrl}}</p> -->
-        <p>By <i>{{authorOfArticle}}</i> {{{publishStatus}}}</p>
+        <p>By <i><a href="{{authorUrl}}">{{authorOfArticle}}</a></i> {{{publishStatus}}}</p>
         <p>{{{body}}}</p>
       </div>
     </script>

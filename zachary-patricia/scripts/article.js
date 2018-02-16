@@ -25,7 +25,9 @@ Article.prototype.toHtml = function() {
 
   this.authorOfArticle = this.author;
 
-  
+  // $('url').on('click', function() {
+  //   let $whereToGo = $(this.authorUrl).data('url');
+  // });
 
   this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
 
