@@ -12,7 +12,7 @@ function Article (rawDataObj) {
 }
 
 Article.prototype.toHtml = function() {
-  // DONE: Use Handlebars to render your articles. Get your template from the DOM and "compile" your template with Handlebars.
+  // done: Use Handlebars to render your articles. Get your template from the DOM and "compile" your template with Handlebars.
   let $template = $('#articles-template').html();
   let templateRender = Handlebars.compile($template);
   // REVIEW: If your template will use properties that aren't on the object yet, add them.
@@ -30,12 +30,12 @@ Article.prototype.toHtml = function() {
   //   this.publishStatus = '(draft)';
   // }
       
-  // DONE: Use the method that Handlebars provides to return your filled-in html template for THIS article.
+  // done: Use the method that Handlebars provides to return your filled-in html template for THIS article.
   return templateRender(this);
       
 };
 
-// COMMENT: Why are there parentheses around "(a,b)" in the .sort() method, but not around the "articleObject" or "article" arguments in the .forEach() methods?
+// comment: Why are there parentheses around "(a,b)" in the .sort() method, but not around the "articleObject" or "article" arguments in the .forEach() methods?
 // When using an arrow function you don't need perens for one peramiter but you do if you have more than one. We are passing in two arguments for the function so we need the perens.
 rawData.sort((a,b) => {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
