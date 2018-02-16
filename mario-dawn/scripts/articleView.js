@@ -2,10 +2,10 @@
 
 let articleView = {};
 
-// TODO: Where possible, refactor methods into arrow functions, including the document.ready() method at the bottom.
+// DONE: Where possible, refactor methods into arrow functions, including the document.ready() method at the bottom.
 
 // COMMENT: How do arrow functions affect the context of "this"? How did you determine if a function could be refactored?
-// PUT YOUR RESPONSE HERE
+// Arrow function is static, where a callback function needs to be dynamic. We changed the outter function to an arrow function ran a test to each one to observe functionality and response on the DOM.
 
 articleView.populateFilters = () => {
   $('article').each(function() {
@@ -63,7 +63,7 @@ articleView.handleMainNav = function() {
 
 articleView.setTeasers = () => {
   $('.article-body *:nth-of-type(n+2)').hide();
-  $('article').on('click', 'a.read-on', () => {
+  $('article').on('click', 'a.read-on', function() {
     if ($(this).text() === 'Read on →') {
       $(this).parent().find('*').fadeIn();
       $(this).html('Show Less &larr;');
