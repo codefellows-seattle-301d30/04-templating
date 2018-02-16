@@ -1,7 +1,7 @@
 # Kilovolt Blog - Lab 04
 
 **Author**: Haron and Suzanne Richman
-**Version**: 1.0.2 (increment the patch/fix version number up if you make more commits past your first submission)
+**Version**: 1.0.3 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
 
@@ -33,7 +33,7 @@ We used IcoMoon icon font for navigation icons. We included the jQuery and Handl
 ## Change Log
 
 02-16-2018 9:45 am - Commit README and added Handlebars library CDN.
-02-16-2018 10:19 am - Added Handlebars library and created handlebars template for HTML. 
+02-16-2018 10:19 am - Added Handlebars library and created handlebars template for HTML. Also did first pull request. 
 
 
 
