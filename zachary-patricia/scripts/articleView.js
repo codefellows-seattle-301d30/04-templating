@@ -2,12 +2,12 @@
 
 let articleView = {};
 
-// TODO: Where possible, refactor methods into arrow functions, including the document.ready() method at the bottom.
+// DONE: Where possible, refactor methods into arrow functions, including the document.ready() method at the bottom.
 
 // COMMENT: How do arrow functions affect the context of "this"? How did you determine if a function could be refactored?
-// PUT YOUR RESPONSE HERE
+// Arrow functions affect the context of this because arrow functions do not have their own scope. If they don't have a reference, the document is treated as contextual this. To determine if a function could be refactored, we first read through the functions to see if they use contextual this. They all do except the last one where we call the functions. Then we refactored the outside functions so that the inside functions that used contextual this would have scope to the outside function.
 
-articleView.populateFilters = function() {
+articleView.populateFilters = () => {
   $('article').each = () => {
     if (!$(this).hasClass('template')) {
       let val = $(this).find('address a').text();
@@ -23,10 +23,10 @@ articleView.populateFilters = function() {
         $('#category-filter').append(optionTag);
       }
     }
-  });
+  };
 };
 
-articleView.handleAuthorFilter = function() {
+articleView.handleAuthorFilter = () => {
   $('#author-filter').on('change', function() {
     if ($(this).val()) {
       $('article').hide();
@@ -39,7 +39,7 @@ articleView.handleAuthorFilter = function() {
   });
 };
 
-articleView.handleCategoryFilter = function() {
+articleView.handleCategoryFilter = () => {
   $('#category-filter').on('change', function() {
     if ($(this).val()) {
       $('article').hide();
@@ -52,7 +52,7 @@ articleView.handleCategoryFilter = function() {
   });
 };
 
-articleView.handleMainNav = function() {
+articleView.handleMainNav = () => {
   $('.main-nav').on('click', '.tab', function() {
     $('.tab-content').hide();
     $(`#${$(this).data('content')}`).fadeIn();
@@ -61,7 +61,7 @@ articleView.handleMainNav = function() {
   $('.main-nav .tab:first').click();
 };
 
-articleView.setTeasers = function() {
+articleView.setTeasers = () => {
   $('.article-body *:nth-of-type(n+2)').hide();
   $('article').on('click', 'a.read-on', function() {
     if ($(this).text() === 'Read on →') {
