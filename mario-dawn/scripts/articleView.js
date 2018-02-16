@@ -7,16 +7,16 @@ let articleView = {};
 // COMMENT: How do arrow functions affect the context of "this"? How did you determine if a function could be refactored?
 // PUT YOUR RESPONSE HERE
 
-articleView.populateFilters = function() {
+articleView.populateFilters = () => {
   $('article').each(function() {
     if (!$(this).hasClass('template')) {
       let val = $(this).find('address a').text();
       let optionTag = `<option value="${val}">${val}</option>`;
-
+      
       if ($(`#author-filter option[value="${val}"]`).length === 0) {
         $('#author-filter').append(optionTag);
       }
-
+      
       val = $(this).attr('data-category');
       optionTag = `<option value="${val}">${val}</option>`;
       if ($(`#category-filter option[value="${val}"]`).length === 0) {
@@ -26,7 +26,7 @@ articleView.populateFilters = function() {
   });
 };
 
-articleView.handleAuthorFilter = function() {
+articleView.handleAuthorFilter = () => {
   $('#author-filter').on('change', function() {
     if ($(this).val()) {
       $('article').hide();
@@ -39,7 +39,7 @@ articleView.handleAuthorFilter = function() {
   });
 };
 
-articleView.handleCategoryFilter = function() {
+articleView.handleCategoryFilter = () => {
   $('#category-filter').on('change', function() {
     if ($(this).val()) {
       $('article').hide();
@@ -51,7 +51,7 @@ articleView.handleCategoryFilter = function() {
     $('#author-filter').val('');
   });
 };
-
+//Images lost when arrow function applied
 articleView.handleMainNav = function() {
   $('.main-nav').on('click', '.tab', function() {
     $('.tab-content').hide();
@@ -61,9 +61,9 @@ articleView.handleMainNav = function() {
   $('.main-nav .tab:first').click();
 };
 
-articleView.setTeasers = function() {
+articleView.setTeasers = () => {
   $('.article-body *:nth-of-type(n+2)').hide();
-  $('article').on('click', 'a.read-on', function() {
+  $('article').on('click', 'a.read-on', () => {
     if ($(this).text() === 'Read on →') {
       $(this).parent().find('*').fadeIn();
       $(this).html('Show Less &larr;');
