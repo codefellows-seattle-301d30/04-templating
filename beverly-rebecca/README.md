@@ -4,20 +4,24 @@
 **Version**: 1.0.0
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for a Code Fellows 301 class. (i.e. What's your problem domain?) -->
+We used handlebar template to populate our blogs. We refactored our functions where possible to use arrow functions. Bascially we made our code more dry. 
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+Clone the code onto thier machine. Get the handlebar CRN and link it in. Refactor functions that don't have this to arrow methods. 
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+We used html and javascript. We used handlebars library. 
 
 ## Change Log
-<!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with GET and POST routes for the book resource.
--->
 02-16-2017 
+9:00am- Forked and cloned repository
+9:10am-Set up READ.me and other files
+9:40am- Commited first TODOs
+10:00am- Switched drivers and converted to arrow functions
+10:45am- Fixed filters and author links
+11:00am- Finished and submitted project
 
 ## Credits and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+Issac the TA and Jeremey helped us. 
+Used yesterdays demos as well. 
