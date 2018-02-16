@@ -24,7 +24,7 @@ articleView.populateFilters = () => {
       }
     }
   });
-};
+}
 
 articleView.handleAuthorFilter = () => {
   $('#author-filter').on('change', function() {
