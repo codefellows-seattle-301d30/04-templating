@@ -8,7 +8,7 @@ let articleView = {};
 // PUT YOUR RESPONSE HERE
 
 articleView.populateFilters = function() {
-  $('article').each(function() {
+  $('article').each = () => {
     if (!$(this).hasClass('template')) {
       let val = $(this).find('address a').text();
       let optionTag = `<option value="${val}">${val}</option>`;
@@ -77,10 +77,10 @@ articleView.setTeasers = function() {
   });
 };
 
-$(document).ready(function() {
+$(document).ready => {
   articleView.populateFilters();
   articleView.handleCategoryFilter();
   articleView.handleAuthorFilter();
   articleView.handleMainNav();
   articleView.setTeasers();
-})
+};
