@@ -16,6 +16,7 @@
 0924 Setup the tree
 0947 first swing at the article tmeplate complete
 1006 compiled with handclebars and it works
+1030 finished the handlebars compiling and added the days agom script to the HTML.
 
 
 ## Credits and Collaborations
