@@ -20,16 +20,12 @@
     -->
     <script id="bloggerArticles-template" type="text/x-handlebars-template">
       <div>
-        <h2>Title: {{title}}</h2>
-        <p>Category: {{category}}</p>
-        <p>Author: {{author}}</p>
-        <p>AuthorURL: {{authorUrl}}</p>
-        <p>Date Published: {{publishedOn}}</p>
+        <h1>{{{title}}}</h1>
+        <!-- <p>AuthorURL: {{authorUrl}}</p> -->
+        <p>By <i>{{authorOfArticle}}</i> {{{publishStatus}}}</p>
         <p>{{{body}}}</p>
       </div>
-       title: 'Bacon Ipsum', category: 'food', author: 'Kevin Bacon', authorUrl: 'http://www.imdb.com/name/nm0000102/', publishedOn:
-      '2015-11-05', body:
-        </script>
+    </script>
   </head>
   <body>
     <header class="site-header clearfix">
@@ -38,7 +34,6 @@
           Kilovolt Blog!
         </h1>
         <h2>The shocking power of static pages</h2>
-      </section>
       <nav class="main-nav">
         <div class="icon-menu"></div>
         <ul>
