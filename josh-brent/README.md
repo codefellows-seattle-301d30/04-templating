@@ -40,6 +40,7 @@ We used IcoMoon icon font for navigation icons. We included the jQuery library. 
 
 * Thanks to our instructors and TAs. 
 * We referenced the jQuery cheat sheet: https://oscarotero.com/jquery/
+* we referneced the handlebars library and docs https://handlebarsjs.com/
 * We used a normalize.css file found here: github.com/necolas/normalize.css
 * We referenced MDN for array methods: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype
 * We referenced our text book: Jon Duckett - JavaScript and JQuery.

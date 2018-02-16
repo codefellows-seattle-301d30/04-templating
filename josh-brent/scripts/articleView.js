@@ -6,11 +6,14 @@ let articleView = {};
 
 // COMMENT: How do arrow functions affect the context of "this"? How did you determine if a function could be refactored?
 // PUT YOUR RESPONSE HERE
-
 articleView.populateFilters = () => {
+  console.log('is this running?');
   $('article').each(function() {
+    console.log('itered article.each')
     if (!$(this).hasClass('template')) {
+      (console.log ('into the if'))
       let val = $(this).find('address a').text();
+      console.log(val);
       let optionTag = `<option value="${val}">${val}</option>`;
 
       if ($(`#author-filter option[value="${val}"]`).length === 0) {
