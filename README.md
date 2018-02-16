@@ -38,7 +38,7 @@ We used IcoMoon icon font for navigation icons. We included the jQuery and Handl
 
 02-16-2018 11:14 am - Updated README. Updated the .toHtml method on the Article constructor function to use Handlebar library to create our template with less code.
 
-02-16-2018 11:14 am - Updated README. Updated converted many functions to arrow functions in the articleView.js. Troubleshot errors in our Handlebar template and found an error in our article.js Article constructor. Removed zombie code. 
+02-16-2018 12:14 am - Updated README. Updated converted many functions to arrow functions in the articleView.js. Troubleshot errors in our Handlebar template and found an error in our article.js Article constructor. Removed zombie code. 
 
 ## Credits and Collaborations
 
