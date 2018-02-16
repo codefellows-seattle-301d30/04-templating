@@ -12,12 +12,11 @@ function Article (rawDataObj) {
 }
 
 Article.prototype.toHtml = function() {
-  // TODO: Use Handlebars to render your articles. Get your template from the DOM and "compile" your template with Handlebars.
+  // DONE: Use Handlebars to render your articles. Get your template from the DOM and "compile" your template with Handlebars.
   let $template = $('#bloggerArticles-template').html();
 
   let templateRender = Handlebars.compile($template);
 
-  return templateRender(this);
 
 
   // REVIEW: If your template will use properties that aren't on the object yet, add them.
@@ -36,12 +35,13 @@ Article.prototype.toHtml = function() {
   //   this.publishStatus = '(draft)';
   // }
 
-  // TODO: Use the method that Handlebars provides to return your filled-in html template for THIS article.
+  // DONE: Use the method that Handlebars provides to return your filled-in html template for THIS article.
+  return templateRender(this);
 
 };
 
 // COMMENT: Why are there parentheses around "(a,b)" in the .sort() method, but not around the "articleObject" or "article" arguments in the .forEach() methods?
-// PUT YOUR RESPONSE HERE
+// rawData.sort requires two argument to do the subtraction function where as the objects do not have arguments.  Multiple parameters must be surrounded by parenthesis.   
 rawData.sort((a,b) => {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
