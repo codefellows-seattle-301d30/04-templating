@@ -5,13 +5,13 @@ let articleView = {};
 // DONE: Where possible, refactor methods into arrow functions, including the document.ready() method at the bottom.
 
 // COMMENT: How do arrow functions affect the context of "this"? How did you determine if a function could be refactored?
-// PUT YOUR RESPONSE HERE
-// 
+// If the direct funtction has 'this' in it then it should not be factored but an outer function could be in a nested functionif the inner one is the one containing 'this'.
 
 articleView.populateFilters = () => {
   $('article').each(function() {
     if (!$(this).hasClass('template')) {
       let val = $(this).find('address a').text();
+      console.log(val);
       let optionTag = `<option value="${val}">${val}</option>`;
 
       if ($(`#author-filter option[value="${val}"]`).length === 0) {
